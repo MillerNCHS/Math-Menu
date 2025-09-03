@@ -7,19 +7,22 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "#Ask how many hours my great employees worked and calculate their salary and concatenates salary into a tuple\n" +
-    "employees = (&quot;Ada Lovelace&quot;,&quot;Grace Hopper&quot;,&quot;Katherine Johnson&quot;,&quot;Margaret Hamilton&quot;,&quot;Megan Smith&quot;)\n" +
-    "pay = ()\n" +
-    "for employee in employees:\n" +
-    "    print(&quot;How many hours did&quot;,employee,&quot;work?&quot;,end = &quot;&quot;)\n" +
-    "    hour = float(input())\n" +
-    "    salary = hour * 18.75\n" +
-    "    pay += (salary,)\n" +
-    "    \n" +
-    "#blank line in output\n" +
-    "print()\n" +
-    "for i in range (len(employees)):\n" +
-    "    print(&quot;{:20}  {:&gt;7.2f} &quot;.format(employees[i],pay[i]))";
+  var initial = "print(&quot;Welcome to the Math Menu Program!&quot;)\n" +
+    "num1 = float(input(&quot;Please enter a number: &quot;))\n" +
+    "num2 = float(input(&quot;Please enter another number: &quot;))\n" +
+    "print(&quot;Math Menu\n\nAddition.........Press 1\nSubtract.........Press 2\nMultiplication...Press 3\nDivision.........Press 4&quot;)\n" +
+    "option = int(input(&quot;What is your menu choice? &quot;))\n" +
+    "if (option == 1):\n" +
+    "  answer = num1 + num2\n" +
+    "elif (option == 2):\n" +
+    "  answer = num1 - num2\n" +
+    "elif (option == 3):\n" +
+    "  answer = num1 * num2\n" +
+    "elif (option == 4):\n" +
+    "  answer = num1 / num2\n" +
+    "else:\n" +
+    "  answer = &quot;That was not a menu option.&quot;\n" +
+    "print(&quot;The answer is&quot;, answer)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
