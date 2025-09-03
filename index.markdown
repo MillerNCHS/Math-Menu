@@ -10,7 +10,11 @@
   var initial = "print(&quot;Welcome to the Math Menu Program!&quot;)\n" +
     "num1 = float(input(&quot;Please enter a number: &quot;))\n" +
     "num2 = float(input(&quot;Please enter another number: &quot;))\n" +
-    "print(&quot;Math Menu\n\nAddition.........Press 1\nSubtract.........Press 2\nMultiplication...Press 3\nDivision.........Press 4&quot;)\n" +
+    "print(&quot;Math Menu&quot;)\n" +
+    "print(&quot;Addition.........Press 1&quot;)\n" +
+    "print(&quot;Subtract.........Press 2&quot;)\n" +
+    "print(&quot;Multiplication...Press 3&quot;)\n" +
+    "print(&quot;Division.........Press 4&quot;)\n" +
     "option = int(input(&quot;What is your menu choice? &quot;))\n" +
     "if (option == 1):\n" +
     "  answer = num1 + num2\n" +
